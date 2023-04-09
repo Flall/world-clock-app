@@ -71,9 +71,7 @@ function setCityTime(cityName, cityTimeZone) {
             <h2>${cityName}</h2>
             <div class="date">${cityTime.format("dddd, MMMM D YYYY")}</div>
           </div>
-            <div class="time">${cityTime.format(
-              "HH:mm:ss"
-            )} <small><i class="fa-regular fa-clock d-none d-md-block"></i></small></div>
+            <div class="time">${cityTime.format("HH:mm:ss")} </div>
 
              </br>
         </br>
