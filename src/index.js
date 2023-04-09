@@ -7,9 +7,7 @@ function updateTime() {
 
     losAngelesDateElement.innerHTML =
       losAngelesTime.format("dddd, MMMM D YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    losAngelesTimeElement.innerHTML = losAngelesTime.format("HH:mm:ss");
   }
 
   let romeElement = document.querySelector("#rome");
@@ -19,7 +17,7 @@ function updateTime() {
     let romeTime = moment().tz("Europe/Rome");
 
     romeDateElement.innerHTML = romeTime.format("dddd, MMMM D YYYY");
-    romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
+    romeTimeElement.innerHTML = romeTime.format("HH:mm:ss");
   }
 
   let singaporeElement = document.querySelector("#singapore");
@@ -29,9 +27,7 @@ function updateTime() {
     let singaporeTime = moment().tz("Asia/Singapore");
 
     singaporeDateElement.innerHTML = singaporeTime.format("dddd, MMMM D YYYY");
-    singaporeTimeElement.innerHTML = singaporeTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    singaporeTimeElement.innerHTML = singaporeTime.format("HH:mm:ss");
   }
 
   let elSalvadorElement = document.querySelector("#el-salvador");
@@ -42,9 +38,7 @@ function updateTime() {
 
     elSalvadorDateElement.innerHTML =
       elSalvatoreTime.format("dddd, MMMM D YYYY");
-    elSalvadorTimeElement.innerHTML = elSalvatoreTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    elSalvadorTimeElement.innerHTML = elSalvatoreTime.format("HH:mm:ss");
   }
 
   let kathmanduElement = document.querySelector("#kathmandu");
@@ -54,9 +48,7 @@ function updateTime() {
     let kathmanduTime = moment().tz("Asia/Kathmandu");
 
     kathmanduDateElement.innerHTML = kathmanduTime.format("dddd, MMMM D YYYY");
-    kathmanduTimeElement.innerHTML = kathmanduTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    kathmanduTimeElement.innerHTML = kathmanduTime.format("HH:mm:ss");
   }
 }
 
@@ -80,8 +72,8 @@ function setCityTime(cityName, cityTimeZone) {
             <div class="date">${cityTime.format("dddd, MMMM D YYYY")}</div>
           </div>
             <div class="time">${cityTime.format(
-              "h:mm:ss"
-            )} <small>${cityTime.format("A")}</small></div>
+              "HH:mm:ss"
+            )} <small><i class="fa-regular fa-clock"></i></small></div>
 
              </br>
         </br>
