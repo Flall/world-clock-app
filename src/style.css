@@ -77,3 +77,28 @@ footer a:hover {
   color: #e11299;
   font-size: 20px;
 }
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 38px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 24px;
+  }
+  .container {
+    text-align: center;
+    padding: 10;
+  }
+  select {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
