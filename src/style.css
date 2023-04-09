@@ -92,6 +92,7 @@ footer a:hover {
   }
   .container {
     text-align: center;
+    max-width: 400px;
     padding: 10;
   }
   select {
